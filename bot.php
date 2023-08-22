@@ -5639,7 +5639,7 @@ if(($data == 'mySubscriptions' or preg_match('/changeOrdersPage(\d+)/',$data, $m
 
 
     if($orders->num_rows==0){
-        alert('عزیزم هیچ سفارشی نداری 🙁 باید یه کانفیگ خریداری کنی');
+        alert('برای خرید کانفیگ ، به پشتیبانی پیام بدید');
         exit;
     }
     $keyboard = [];
