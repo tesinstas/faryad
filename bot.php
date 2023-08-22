@@ -863,7 +863,7 @@ if ($data=='buySubscription' && ($botState['sellState']=="on" || ($from_id == $a
     $respd = $stmt->get_result();
     $stmt->close();
     if($respd->num_rows==0){
-        alert("😔 | عزیز دلم هیچ سرور فعالی نداریم لطفا بعدا مجدد تست کن");
+        alert("😔 | برای خرید کانفیگ ، به پشتیبانی پیام بدید");
         exit;
     }
     $keyboard = [];
@@ -887,7 +887,7 @@ if ($data=='createMultipleAccounts' && ($from_id == $admin || $userInfo['isAdmin
     $respd = $stmt->get_result();
     $stmt->close();
     if($respd->num_rows==0){
-        sendMessage("😔 | عزیز دلم هیچ سرور فعالی نداریم لطفا بعدا مجدد تست کن");
+        sendMessage("😔 | برای خرید کانفیگ ، به پشتیبانی پیام بدید");
         exit;
     }
     $keyboard = [];
