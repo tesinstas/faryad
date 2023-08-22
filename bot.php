@@ -4774,7 +4774,7 @@ if($userInfo['step'] == "showAccount" and $text != $cancelText){
         exit();
     }
     
-    sendMessage("گلم لطفا یکم منتظر بمون ...", $removeKeyboard);
+    sendMessage("لطفا یکم منتظر بمون ...", $removeKeyboard);
     $stmt = $connection->prepare("SELECT * FROM `server_config`");
     $stmt->execute();
     $serversList = $stmt->get_result();
@@ -4966,7 +4966,7 @@ if($userInfo['step'] == "showAccount" and $text != $cancelText){
         }
     }
     if(!$found){
-         sendMessage("ای وای ، اطلاعاتت اشتباهه 😔",$cancelKey);
+         sendMessage("کانفیگ درست وارد نشده,برای کمک بیشتر به پشتیبانی پیام بدید",$cancelKey);
     }
 }
 if (($data == 'addNewPlan' || $data=="addNewRahgozarPlan") and (($from_id == $admin || $userInfo['isAdmin'] == true))){
