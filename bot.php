@@ -4758,7 +4758,7 @@ if(preg_match('/^showMainButtonAns(\d+)/',$data,$match)){
 }
 if($data=="showUUIDLeft" && ($botState['searchState']=="on" || $from_id== $admin)){
     delMessage();
-    sendMessage("❗️| لینک کانفیگ یا uuid رو برام بفرس اطلاعات کامل رو تحویلت بدم 🤭",$cancelKey);
+    sendMessage("❗️| کانفیگ vpn خودتون رو ارسال کنید 🤭",$cancelKey);
     setUser('showAccount');
 }
 if($userInfo['step'] == "showAccount" and $text != $cancelText){
