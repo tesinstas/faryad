@@ -217,7 +217,7 @@ if ($update->message->document->file_id) {
     $fileid = $update->message->video->file_id;
 }
 
-$cancelText = '😪 منصرف شدم بیخیال';
+$cancelText = 'بازگشت';
 $cancelKey=json_encode(['keyboard'=>[
     [['text'=>$cancelText]]
 ],'resize_keyboard'=>true]);
