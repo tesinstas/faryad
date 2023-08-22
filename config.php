@@ -232,7 +232,7 @@ if ($from_id == $admin || $userInfo['isAdmin'] == true) {
     // $mainKeys[] = [['text'=>"▫️ موجودی سرورها ▫️",'callback_data'=>"availableServers"]];
     // $mainKeys[] = [['text'=>"❕ موجودی اشتراکی ",'callback_data'=>"availableServers"],['text'=>"❗️ موجودی اختصاصی ",'callback_data'=>"availableServers2"]];
     // $mainKeys[] = [['text'=>'🔗 لینک نرم افزار ها','callback_data'=>"reciveApplications"],['text'=>"📨 تیکت های من",'callback_data'=>"supportSection"]];
-    $temp[] = ['text'=>"🪫 مشخصات کانفیگ",'callback_data'=>"showUUIDLeft"];
+    $temp[] = ['text'=>"🪫 اطلاع از حجم و زمان بافی مانده",'callback_data'=>"showUUIDLeft"];
     
     $stmt = $connection->prepare("SELECT * FROM `setting` WHERE `type` LIKE '%MAIN_BUTTONS%'");
     $stmt->execute();
@@ -285,7 +285,7 @@ if ($from_id == $admin || $userInfo['isAdmin'] == true) {
     // $keys[] = [['text'=>"❕ موجودی اشتراکی ",'callback_data'=>"availableServers"],['text'=>"❗️ موجودی اختصاصی ",'callback_data'=>"availableServers2"]];
     $temp[] =['text'=>"📨 تیکت های من",'callback_data'=>"supportSection"];
     if($botState['searchState']=="on"){
-        $temp[] = ['text'=>"🪫 مشخصات کانفیگ",'callback_data'=>"showUUIDLeft"];
+        $temp[] = ['text'=>"🪫 اطلاع از حجم و زمان بافی مانده",'callback_data'=>"showUUIDLeft"];
         array_push($keys,$temp);
         $temp = array();
     }
@@ -732,7 +732,7 @@ function getBotSettingKeys(){
         ],
         [
             ['text'=>$searchState,'callback_data'=>"changeBotsearchState"],
-            ['text'=>"مشخصات کانفیگ",'callback_data'=>"wizwizch"]
+            ['text'=>"اطلاع از حجم و زمان بافی مانده",'callback_data'=>"wizwizch"]
         ],
         [
             ['text'=>$rewaredTime,'callback_data'=>'editRewardTime'],
